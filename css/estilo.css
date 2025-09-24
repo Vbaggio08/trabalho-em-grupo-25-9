@@ -1,0 +1,410 @@
+/* ==========================================================================
+   Variáveis Globais e Estilos Base
+   ========================================================================== */
+   :root {
+    --primary-color: #7156b5; /* Roxo escuro do fundo */
+    --secondary-color: #29252b; /* Preto da barra de navegação e seções */
+    --text-color: #ffffff; /* Cor do texto principal */
+    --text-secondary-color: #dddddd; /* Cor de texto secundária (parágrafos) */
+    --accent-color: #ffeb3b; /* Amarelo do logo (GAMEDATA) */
+    --input-background: #ffffff; /* Fundo dos campos de formulário */
+    --input-text-color: #29252b; /* Cor do texto nos campos de formulário */
+    --button-hover-opacity: 0.9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Garante que o main ocupe o espaço disponível */
+}
+
+/* ==========================================================================
+   Cabeçalho e Navegação
+   ========================================================================== */
+header {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    padding: 10px 0;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   Estilos Gerais de Seção e Conteúdo
+   ========================================================================== */
+section {
+    padding: 40px 20px;
+}
+
+.content-container {
+    background: var(--secondary-color);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 900px;
+}
+
+/* ==========================================================================
+   Página Inicial (index.html)
+   ========================================================================== */
+.info-box {
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 30px;
+    max-width: 1200px;
+    text-align: left;
+}
+
+.info-box strong {
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.info-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-secondary-color);
+}
+
+.info-box > div {
+    flex: 1;
+}
+
+.fachada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.fachada img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.newsletter {
+    background-color: var(--secondary-color);
+    padding: 15px 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.newsletter strong {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: lowercase;
+    font-size: 16px;
+}
+
+#email-input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* ==========================================================================
+   Página de Valores (informativo.html)
+   ========================================================================== */
+.history-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.history-content h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.history-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history-content li {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.history-content li strong {
+    color: var(--accent-color);
+}
+
+/* ==========================================================================
+   Página de Cotação e Contato (Formulários)
+   ========================================================================== */
+.form-container {
+    background-color: var(--secondary-color);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-section {
+    margin-bottom: 40px;
+}
+.form-section:last-child {
+    margin-bottom: 0;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--input-background);
+    color: var(--input-text-color);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.upload-container h2 {
+    margin-top: 20px;
+}
+
+/* ==========================================================================
+   Página de Consoles (consoles.html)
+   ========================================================================== */
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.content-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content-header input {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.card-list {
+    max-height: 450px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.card-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.card-list::-webkit-scrollbar-track {
+    background: var(--input-background);
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.card img {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.card .info {
+    flex: 1;
+    text-align: left;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   Página de Contato (contato.html)
+   ========================================================================== */
+.terminal-window {
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.terminal-window .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-links i {
+    margin-right: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--input-background);
+    color: var(--input-text-color);
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* ==========================================================================
+   Botão Genérico
+   ========================================================================== */
+.btn {
+    background: var(--primary-color);
+    border: none;
+    color: var(--text-color);
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: var(--button-hover-opacity);
+}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+footer {
+    background: var(--secondary-color);
+    color: var(--text-secondary-color);
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 40px auto 0 auto;
+    width: 80%;
+    max-width: 900px;
+}

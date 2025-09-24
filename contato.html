@@ -2,50 +2,59 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contatos</title>
-    <link rel="stylesheet" href="css/styleluan.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GameData</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html"> <img src="img/logo.png" alt="Logo da GameData"></a>
+  <header>
+    <div class="logo">
+      <a href="index.html"> <img src="img/logo.png" alt="Logo da GameData"> </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="informativo.html">Valores</a></li>
+        <li><a href="cotacao.html">Cotação</a></li>
+        <li><a href="consoles.html">Console</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact" class="terminal-window">
+      <h2 class="section-title">Entre em contato</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> gamedata@gmail.com</p>
+          <div class="social-links">
+            <a href="https://facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> Instagram</a>
+          </div>
         </div>
-    </header>
 
-    <main>
-        <section id="contact" class="terminal-window contact">
-            <h2 class="section-title">Entre em contato</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i>gamedata@gmail.com</p>
-                    <div class="social-links">
-                        <a href="https://facebook.com/" target="_blank" rel="noopener"><i
-                                class="fab fa-facebook"></i>facebook</a>
-                        <a href="https://instagram.com/" target="_blank" rel="noopener"><i
-                                class="fab fa-instagram"></i>Instagram</a>
-                    </div>
-                </div>
-                <form class="contact-form" action="#" method="get" onsubmit="return valproccontato()" >
-                    <input type="text" name="name" id="nome" placeholder="Seu Nome" required />
-                    <input type="text" name="email" id="email" placeholder="Seu E-mail" required />
-                    <textarea name="text" placeholder="Sua mensagem" required></textarea>
-                    <button type="submit" class="btn">Enviar mensagem</button>
-                </form>
-            </div>
-        </section>
-    </main>
+        <form class="contact-form" action="#" method="POST" onsubmit="return valproccontato()">
+          <input type="text" id="nome" name="name" placeholder="Seu Nome"/>
+          <input type="text" id="email" name="email" placeholder="Seu E-mail"/>
+          <textarea name="message" placeholder="Sua mensagem"></textarea>
+          <button type="submit" class="btn">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; LWO. Todos os direitos reservados.</p>
-    </footer>
+  <footer>
+    <p>GameData</p>
+  </footer>
 
-<script src="js/validacontato.js"></script>
+  <script src="js/validacontato.js"></script>
 </body>
 
 </html>
