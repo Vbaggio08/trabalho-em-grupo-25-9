@@ -1,4 +1,4 @@
-function validaContato() {
+function valproccontato() {
     let cxNome = document.getElementById("nome");
     let cxEmail = document.getElementById("email");
 
