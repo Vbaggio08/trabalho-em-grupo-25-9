@@ -213,9 +213,20 @@ section {
     background-color: var(--secondary-color);
     padding: 30px;
     border-radius: 15px;
+<<<<<<< HEAD
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
+=======
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+
+    display: flex;           /* coloca lado a lado */
+    gap: 40px;               /* espaço entre eles */
+    flex-wrap: wrap;         /* quebra no mobile */
+    align-items: flex-start; /* alinha pelo topo */
+>>>>>>> 3329661345a6826422c4e9ebb1d44b43531de5e8
 }
 
 .form-container h2 {
@@ -224,10 +235,15 @@ section {
 }
 
 .form-section {
+<<<<<<< HEAD
     margin-bottom: 40px;
 }
 .form-section:last-child {
     margin-bottom: 0;
+=======
+    flex: 1;
+    min-width: 300px; /* garante responsividade */
+>>>>>>> 3329661345a6826422c4e9ebb1d44b43531de5e8
 }
 
 .form-container label {
