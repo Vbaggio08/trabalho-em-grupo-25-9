@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #7156b5;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.logo-img {
+    width: 120px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    background: #29252b;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.conteudo {
+    background: #29252b;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 900px;
+    flex: 1;
+}
+
+.conteudo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.conteudo-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.conteudo-header input {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.card-list {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.card-list::-webkit-scrollbar {
+    width: 10px;
+}
+.card-list::-webkit-scrollbar-thumb {
+    background: #7156b5;
+    border-radius: 10px;
+}
+.card-list::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 12px;
+    color: #fff;
+}
+
+.card img {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.card .info {
+    flex: 1;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.btn {
+    background: #7156b5;
+    border: none;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+footer {
+    background: #29252b;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+}
