@@ -31,10 +31,10 @@
                                 class="fab fa-instagram"></i>Instagram</a>
                     </div>
                 </div>
-                <form class="contact-form" action="#" method="POST">
-                    <input type="text" name="name" placeholder="Seu Nome" required />
-                    <input type="email" name="email" placeholder="Seu E-mail" required />
-                    <textarea name="message" placeholder="Sua mensagem" required></textarea>
+                <form class="contact-form" action="#" method="get" onsubmit="return valproccontato()" >
+                    <input type="text" name="name" id="nome" placeholder="Seu Nome" required />
+                    <input type="text" name="email" id="email" placeholder="Seu E-mail" required />
+                    <textarea name="text" placeholder="Sua mensagem" required></textarea>
                     <button type="submit" class="btn">Enviar mensagem</button>
                 </form>
             </div>
@@ -45,7 +45,7 @@
         <p>&copy; LWO. Todos os direitos reservados.</p>
     </footer>
 
-
+<script src="js/validacontato.js"></script>
 </body>
 
 </html>
