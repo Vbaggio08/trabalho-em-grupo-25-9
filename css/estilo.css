@@ -1,6 +1,23 @@
 /* ==========================================================================
    Variáveis Globais e Estilos Base
    ========================================================================== */
+<<<<<<< HEAD
+:root {
+    --primary-color: #7156b5;
+    /* Roxo escuro do fundo */
+    --secondary-color: #29252b;
+    /* Preto da barra de navegação e seções */
+    --text-color: #ffffff;
+    /* Cor do texto principal */
+    --text-secondary-color: #dddddd;
+    /* Cor de texto secundária (parágrafos) */
+    --accent-color: #ffeb3b;
+    /* Amarelo do logo (GAMEDATA) */
+    --input-background: #ffffff;
+    /* Fundo dos campos de formulário */
+    --input-text-color: #29252b;
+    /* Cor do texto nos campos de formulário */
+=======
    :root {
     --primary-color: #7156b5; /* Roxo escuro do fundo */
     --secondary-color: #29252b; /* Preto da barra de navegação e seções */
@@ -9,6 +26,7 @@
     --accent-color: #ffeb3b; /* Amarelo do logo (GAMEDATA) */
     --input-background: #ffffff; /* Fundo dos campos de formulário */
     --input-text-color: #29252b; /* Cor do texto nos campos de formulário */
+>>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
     --button-hover-opacity: 0.9;
 }
 
@@ -31,7 +49,12 @@ body {
 }
 
 main {
+<<<<<<< HEAD
+    flex: 1;
+    /* Garante que o main ocupe o espaço disponível */
+=======
     flex: 1; /* Garante que o main ocupe o espaço disponível */
+>>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
 }
 
 /* ==========================================================================
@@ -101,6 +124,13 @@ section {
     max-width: 900px;
 }
 
+<<<<<<< HEAD
+#searchBar.invalid {
+    border: 2px solid red;
+}
+
+=======
+>>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
 /* ==========================================================================
    Página Inicial (index.html)
    ========================================================================== */
@@ -129,7 +159,11 @@ section {
     color: var(--text-secondary-color);
 }
 
+<<<<<<< HEAD
+.info-box>div {
+=======
 .info-box > div {
+>>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
     flex: 1;
 }
 
@@ -147,6 +181,66 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+<<<<<<< HEAD
+/* ==========================================================================
+   newsletter (index.html)
+   ========================================================================== */
+
+.newsletter {
+    background-color: #2e2b31;
+    color: white;
+    padding: 30px;
+    margin: 40px auto 0 auto;
+    border-radius: 20px;
+    max-width: 800px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#newsletterForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#emailInput {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#emailInput.invalid {
+    border-color: red;
+}
+
+#newsletterForm button {
+    padding: 10px 20px;
+    background-color: #6b4bb4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+#newsletterForm button:hover {
+    background-color: #5a3fa1;
+=======
 .newsletter {
     background-color: var(--secondary-color);
     padding: 15px 30px;
@@ -171,6 +265,7 @@ section {
     border: none;
     outline: none;
     font-size: 16px;
+>>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
 }
 
 /* ==========================================================================
@@ -218,15 +313,32 @@ section {
     margin: 0 auto;
     text-align: left;
 =======
+<<<<<<< HEAD
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+=======
+>>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
     max-width: 1200px;
     margin: 0 auto;
     text-align: left;
 
+<<<<<<< HEAD
+    display: flex;
+    /* coloca lado a lado */
+    gap: 40px;
+    /* espaço entre eles */
+    flex-wrap: wrap;
+    /* quebra no mobile */
+    align-items: flex-start;
+    /* alinha pelo topo */
+=======
     display: flex;           /* coloca lado a lado */
     gap: 40px;               /* espaço entre eles */
     flex-wrap: wrap;         /* quebra no mobile */
     align-items: flex-start; /* alinha pelo topo */
 >>>>>>> 3329661345a6826422c4e9ebb1d44b43531de5e8
+>>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
 }
 
 .form-container h2 {
@@ -238,12 +350,23 @@ section {
 <<<<<<< HEAD
     margin-bottom: 40px;
 }
+
+.form-section:last-child {
+    margin-bottom: 0;
+    flex: 1;
+    min-width: 300px;
+    /* garante responsividade */
+=======
+<<<<<<< HEAD
+    margin-bottom: 40px;
+}
 .form-section:last-child {
     margin-bottom: 0;
 =======
     flex: 1;
     min-width: 300px; /* garante responsividade */
 >>>>>>> 3329661345a6826422c4e9ebb1d44b43531de5e8
+>>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
 }
 
 .form-container label {
