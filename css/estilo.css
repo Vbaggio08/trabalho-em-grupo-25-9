@@ -1,7 +1,7 @@
 /* ==========================================================================
    Variáveis Globais e Estilos Base
    ========================================================================== */
-:root {
+   :root {
     --primary-color: #7156b5;
     /* Roxo escuro do fundo */
     --secondary-color: #29252b;
@@ -282,7 +282,16 @@ section {
 }
 
 .form-section {
+    flex: 1;              /* ocupa espaço igual */
+    min-width: 300px;     /* garante responsividade */
+    max-width: 50%;       /* divide meio a meio */
     margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+    .form-section {
+        max-width: 100%; /* no mobile ocupa largura total */
+    }
 }
 
 .form-section:last-child {
