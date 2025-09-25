@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamedata - Consoles</title>
-    <link rel="stylesheet" href="css/daivinho.css">
+    <title>GameData</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/gamedata.png">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img src="img/logo.png" alt="Logo Gamedata" class="logo-img">
+            <a href="index.html"> <img src="img/gamedata.png" alt="Logo da GameData"> </a>
         </div>
-        <nav class="menu">
-            <a href="#">Inicio</a>
-            <a href="#">Valores</a>
-            <a href="#">Cotação</a>
-            <a href="#">Console</a>
-            <a href="#">Contato</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="informativo.html">Valores</a></li>
+                <li><a href="cotacao.html">Cotação</a></li>
+                <li><a href="consoles.html">Console</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section class="conteudo">
-            <div class="conteudo-header">
+        <section class="content-container">
+            <div class="content-header">
                 <h2>Consoles</h2>
                 <input type="text" id="searchBar" placeholder="Pesquisar...">
             </div>
@@ -95,9 +101,10 @@
     </main>
 
     <footer>
-        <p>Turma ADS 2025</p>
+        <p>© Gamedata - Turma ADS 2025</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/buscaConsole.js"></script>
 </body>
+
 </html>
