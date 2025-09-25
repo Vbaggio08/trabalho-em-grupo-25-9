@@ -1,7 +1,6 @@
 /* ==========================================================================
    Variáveis Globais e Estilos Base
    ========================================================================== */
-<<<<<<< HEAD
 :root {
     --primary-color: #7156b5;
     /* Roxo escuro do fundo */
@@ -17,16 +16,6 @@
     /* Fundo dos campos de formulário */
     --input-text-color: #29252b;
     /* Cor do texto nos campos de formulário */
-=======
-   :root {
-    --primary-color: #7156b5; /* Roxo escuro do fundo */
-    --secondary-color: #29252b; /* Preto da barra de navegação e seções */
-    --text-color: #ffffff; /* Cor do texto principal */
-    --text-secondary-color: #dddddd; /* Cor de texto secundária (parágrafos) */
-    --accent-color: #ffeb3b; /* Amarelo do logo (GAMEDATA) */
-    --input-background: #ffffff; /* Fundo dos campos de formulário */
-    --input-text-color: #29252b; /* Cor do texto nos campos de formulário */
->>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
     --button-hover-opacity: 0.9;
 }
 
@@ -49,12 +38,8 @@ body {
 }
 
 main {
-<<<<<<< HEAD
     flex: 1;
     /* Garante que o main ocupe o espaço disponível */
-=======
-    flex: 1; /* Garante que o main ocupe o espaço disponível */
->>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
 }
 
 /* ==========================================================================
@@ -124,13 +109,10 @@ section {
     max-width: 900px;
 }
 
-<<<<<<< HEAD
 #searchBar.invalid {
     border: 2px solid red;
 }
 
-=======
->>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
 /* ==========================================================================
    Página Inicial (index.html)
    ========================================================================== */
@@ -159,11 +141,7 @@ section {
     color: var(--text-secondary-color);
 }
 
-<<<<<<< HEAD
 .info-box>div {
-=======
-.info-box > div {
->>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
     flex: 1;
 }
 
@@ -181,7 +159,6 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-<<<<<<< HEAD
 /* ==========================================================================
    newsletter (index.html)
    ========================================================================== */
@@ -240,32 +217,6 @@ section {
 
 #newsletterForm button:hover {
     background-color: #5a3fa1;
-=======
-.newsletter {
-    background-color: var(--secondary-color);
-    padding: 15px 30px;
-    border-radius: 15px;
-    max-width: 600px;
-    margin: 0 auto 30px;
-    text-align: center;
-}
-
-.newsletter strong {
-    display: block;
-    margin-bottom: 15px;
-    font-weight: bold;
-    text-transform: lowercase;
-    font-size: 16px;
-}
-
-#email-input {
-    width: 100%;
-    padding: 12px 15px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    font-size: 16px;
->>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
 }
 
 /* ==========================================================================
@@ -308,22 +259,13 @@ section {
     background-color: var(--secondary-color);
     padding: 30px;
     border-radius: 15px;
-<<<<<<< HEAD
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
-=======
-<<<<<<< HEAD
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-=======
->>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
     max-width: 1200px;
     margin: 0 auto;
     text-align: left;
 
-<<<<<<< HEAD
     display: flex;
     /* coloca lado a lado */
     gap: 40px;
@@ -332,13 +274,6 @@ section {
     /* quebra no mobile */
     align-items: flex-start;
     /* alinha pelo topo */
-=======
-    display: flex;           /* coloca lado a lado */
-    gap: 40px;               /* espaço entre eles */
-    flex-wrap: wrap;         /* quebra no mobile */
-    align-items: flex-start; /* alinha pelo topo */
->>>>>>> 3329661345a6826422c4e9ebb1d44b43531de5e8
->>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
 }
 
 .form-container h2 {
@@ -347,7 +282,6 @@ section {
 }
 
 .form-section {
-<<<<<<< HEAD
     margin-bottom: 40px;
 }
 
@@ -356,17 +290,6 @@ section {
     flex: 1;
     min-width: 300px;
     /* garante responsividade */
-=======
-<<<<<<< HEAD
-    margin-bottom: 40px;
-}
-.form-section:last-child {
-    margin-bottom: 0;
-=======
-    flex: 1;
-    min-width: 300px; /* garante responsividade */
->>>>>>> 3329661345a6826422c4e9ebb1d44b43531de5e8
->>>>>>> d6ea37bd2d34be8f1dd805eb075d5f6e1bb9fda0
 }
 
 .form-container label {
